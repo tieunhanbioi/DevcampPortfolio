@@ -17,3 +17,10 @@
 /yarn-error.log
 
 .byebug_history
+
+
+# ignore secret.yml
+/config/secrets.yml
+
+#ignore database.yml credentials
+/config/database.yml
