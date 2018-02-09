@@ -15,7 +15,7 @@ class Portfolio < ApplicationRecord
     # same as say if self.main_image == nil
     #                  self.main_image == "http://via.placeholder.com/600x200"
     #              end
-    self.main_image ||= "http://via.placeholder.com/600x200"
-    self.thumb_image ||= "http://via.placeholder.com/350x150"
+    self.main_image ||= Placeholder.image_generator("600", "400")
+    self.thumb_image ||= Placeholder.image_generator("350", "200")
   end
 end
