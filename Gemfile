@@ -11,6 +11,7 @@ gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '0.21.0'
 gem 'friendly_id', '~> 5.1.0'
+gem 'devise', '~> 4.4', '>= 4.4.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
