@@ -1,7 +1,8 @@
 
-<h1>Welcome <%= current_user.first_name if current_user %> you're in the home page</h1>
+<h1>Welcome <%= current_user.first_name %> you're in the home page</h1>
 <h1>Blog</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 <%= @posts.inspect %>
 <h1>Skills</h1>
 <%= @skills.inspect %>
+<%= current_user.class %>
