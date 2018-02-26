@@ -3,8 +3,7 @@ class ApplicationController < ActionController::Base
   include DeviseWhitelist
   include SetSource
   include CurrentUserConcern
+  include DefaultPageContent
 
-  def current_user
-    super || OpenStruct.new(name: "Jordans Hudgens", first_name: "Guest", last_name: "Hudgens", email: "asdf@asdf.com")
-  end
+
 end
