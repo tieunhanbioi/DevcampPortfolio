@@ -1,19 +1,2 @@
 <h1>Edit a portfolio item</h1>
-<%= form_for @portfolio_item do |form| %>
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :subtitle %>
-    <%= form.text_field :subtitle, id: :blog_body %>
-  </div>
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body %>
-  </div>
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+<%= render "form", portfolio_item: @portfolio_item %>
