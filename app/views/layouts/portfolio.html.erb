@@ -14,11 +14,8 @@
      <%= render "shared/nav", location: 'top' %>
 
   <%= login_helper %>
-     <% if session[:source] %>
-     <p>
-       welcome you from <%= session[:source] %>
-     </p>
-     <% end %>
+  <%= source_helper("portfolio") %>
+
     <%= yield %>
   </body>
 </html>
